@@ -1,0 +1,42 @@
+{% extends "./index.html" %}
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend>Enter Details</legend>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" value="" name="name" id=""></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td><input type="text" value="" name="class" id=""></td>
+            </tr>
+            <tr>
+                <td>Graphics</td>
+                <td><input type="text" value="" name="graphics" id=""></td>
+            </tr>
+            <tr>
+                <td>OS</td>
+                <td><input type="text" value="" name="os" id=""></td>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                <td><input type="text" value="" name="maths" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Add">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+
+
+{% include './table.html' %}
+
+{% endblock %}

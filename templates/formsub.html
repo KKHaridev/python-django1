@@ -1,0 +1,30 @@
+{% extends "./index.html" %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <fieldset>
+        <legend>formsub</legend>
+        <table>
+            <tr>
+                <td>Firstnum</td>
+                <td><input type="text" value="{{vara}}" name="t3" id=""></td>
+            </tr>
+            <tr>
+                <td>Secondnum</td>
+                <td><input type="text" value="{{varb}}" name="t4" id=""></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Subtract">
+                </td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td>
+                    <input type="text" name="res" value="{{res}}" id="">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+{% endblock %}
